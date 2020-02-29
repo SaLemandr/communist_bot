@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 from time import *
 
-Part_bilet = 'NjgyMjQyNDI4MTkwNTg5MDI2.XlaLYQ.E9B806UKTYP5mDdG6RxFxl1KyNc'
+Part_bilet = 'NjgyMjQyNDI4MTkwNTg5MDI2.XlgWLA.croWp-aA_7EmMFsx5-zqSyw7OlM'
 bot = commands.Bot(command_prefix = '!')
 
 
@@ -20,10 +20,10 @@ emojis = {
 
 
 @bot.command(pass_context=True) #разрешаем передавать агрументы
-
 async def emoji(ctx, arg):
     await ctx.send(emojis[arg])
 
+@bot.command(pass_context=True) #разрешаем передавать агрументы
 async def test(ctx, arg): #создаем асинхронную фунцию бота
     await ctx.send(arg) #отправляем обратно аргумент
     print(arg)
