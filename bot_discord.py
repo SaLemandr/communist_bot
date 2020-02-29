@@ -1,8 +1,9 @@
 import discord
 from discord.ext import commands
 from time import *
+from token import Part_bilet
 
-Part_bilet = 'NjgyMjQyNDI4MTkwNTg5MDI2.XlgWLA.croWp-aA_7EmMFsx5-zqSyw7OlM'
+
 bot = commands.Bot(command_prefix = '!')
 
 
