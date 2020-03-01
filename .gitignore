@@ -1,2 +1,3 @@
 /.vscode/*
-/token.py
+/hiden_token.py
+/__pycache__/*

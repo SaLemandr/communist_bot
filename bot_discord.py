@@ -1,7 +1,8 @@
 import discord
 from discord.ext import commands
 from time import *
-from token import Part_bilet
+from hiden_token import Part_bilet
+from twitch-python import *
 
 
 bot = commands.Bot(command_prefix = '!')
@@ -27,6 +28,8 @@ async def emoji(ctx, arg):
 @bot.command(pass_context=True) #разрешаем передавать агрументы
 async def test(ctx, arg): #создаем асинхронную фунцию бота
     await ctx.send(arg) #отправляем обратно аргумент
-    print(arg)
+    await ctx.message.delete()
+    print(type(ctx))
+
 
 bot.run(Part_bilet)
